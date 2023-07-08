@@ -1,0 +1,73 @@
+#generate {
+    margin: 2rem;
+}
+
+#part1 {
+    margin: 0.75rem;
+}
+
+.command {
+    text-align: center;
+}
+
+#con {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.75rem;
+}
+
+}
+
+.rate {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float:none;
+    height: 46px;
+    width: 46px;
+    
+}
+
+.rate:not(:checked) > input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked) > label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 2.8rem;
+    color: #ccc;
+}
+
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
+.btn-primary {
+    margin: 1rem;
+}
